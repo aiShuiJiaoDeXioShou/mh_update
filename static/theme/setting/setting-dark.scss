@@ -1,0 +1,36 @@
+@import url("@/static/theme/comm.scss");
+page {
+  background-color: #222329;
+}
+
+.box {
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.list {
+  background-color: #222329;
+  margin: 30rpx auto;
+  padding: 34rpx 20rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.list .text {
+  color: #999;
+  font-size: 26rpx;
+  color: #fff;
+}
+.btn {
+  background-color: #222329;
+  margin: 30rpx auto;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+}

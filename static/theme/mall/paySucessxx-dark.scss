@@ -1,0 +1,39 @@
+@import url("@/static/theme/comm.scss");
+page{
+    background-color: #232429;
+}
+
+.pay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    width: 750rpx;
+    text-align: center;
+}
+
+.box image {
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.cg {
+    font-size: 32rpx;
+    color: #999;
+    margin-top: 20rpx;
+}
+
+.btn {
+    width: 200rpx;
+    margin: 0 auto;
+    margin-top: 500rpx;
+
+}
+.btn1{
+    border: none;
+    background-color: #E7C896;
+    color: black;
+}

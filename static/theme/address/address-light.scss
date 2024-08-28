@@ -1,0 +1,63 @@
+@import url("@/static/theme/comm.scss");
+page {
+	background-color: #F4F4FC;
+}
+
+.addbox {
+	position: relative;
+	min-height: 100vh;
+}
+
+.addressList {
+	padding: 0 20rpx;
+	box-sizing: border-box;
+}
+
+.list {
+	margin: 20rpx 0;
+	background-color: #fff;
+	padding: 20rpx;
+	box-sizing: border-box;
+	border-radius: 10rpx;
+}
+
+.info {
+	padding-bottom: 20rpx;
+	border-bottom: 1rpx solid #ddd;
+}
+
+.info .phone {
+	font-weight: bold;
+	margin-left: 20rpx;
+}
+
+.info .add {
+	margin-top: 8rpx;
+	font-size: 24rpx;
+	color: #999;
+}
+
+.setup {
+	margin-top: 20rpx;
+}
+
+.edit .text {
+	width: 90rpx;
+	text-align: center;
+	color: #999;
+}
+
+.line {
+	width: 1rpx;
+	height: 40rpx;
+	border-left: 1rpx solid #999;
+}
+
+.btn {
+	width: 710rpx;
+	position: absolute;
+	left: 20rpx;
+	bottom: 40rpx;
+	background-color: #2AC2B3;
+	color: #fff;
+}

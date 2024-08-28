@@ -1,0 +1,35 @@
+@import url("@/static/theme/comm.scss");
+page {
+	background-color: #222329;
+	padding: 10px;
+}
+
+.box {
+	background-color: #222329;
+	margin: 20rpx auto;
+	border-radius: 42px !important;
+}
+
+>>> .u-cell {
+	background-color: #222329 !important;
+	border-radius: 20px;
+}
+
+>>> .u-cell-item-box {
+	background-color: transparent !important;
+}
+
+>>> .u-cell_title {
+	color: white;
+}
+
+>>> .u-border-bottom:after {
+	content: '' !important;
+	border-bottom-width: 0px !important;
+}
+
+.head {
+	width: 75rpx;
+	height: 75rpx;
+	border-radius: 50%;
+}

@@ -1,0 +1,484 @@
+@import url("../comm.scss");
+page {
+	height: 100vh;
+	width: 100%;
+	background-color:  rgb(239, 243, 250);
+}
+
+.top-box {
+  width: 750rpx;
+  height: 480rpx;
+  padding-top: 44rpx;
+  box-sizing: border-box;
+  position: relative;
+
+  .img-bg {
+	width: 750rpx;
+	height: 480rpx;
+	position: absolute;
+	top: 0;
+  }
+
+  .userInfo-box {
+	width: 690rpx;
+	height: 60rpx;
+	position: absolute;
+	box-sizing: border-box;
+	left: 30rpx;
+	top: 196rpx;
+	display: flex;
+	justify-content: space-between;
+
+	.left {
+	  display: flex;
+	  align-items: center;
+	  position: relative;
+	  max-width: 70%;
+
+	  image {
+		width: 120rpx;
+		height: 120rpx;
+		border-radius: 50%;
+		margin-right: 30rpx;
+		flex-shrink: 0;
+	  }
+
+	  .get-proto {
+		position: absolute;
+		width: 140rpx;
+		text-align: center;
+		font-size: 22rpx;
+		color: #fff;
+		text-align: center;
+	  }
+
+	  .denglu {
+		color: #fff;
+		font-size: 25rpx;
+		margin-top: 10rpx;
+	  }
+
+	  .userName {
+		color: #fff;
+		font-weight: bold;
+		font-size: 32rpx;
+	  }
+	}
+
+	.edit {
+	  display: flex;
+	  align-items: center;
+	  border-radius: 60rpx;
+	  height: 60rpx;
+	  border: 1rpx solid #000;
+	  padding: 0 20rpx;
+	  margin-top: 30rpx;
+	}
+
+	.edit image {
+	  width: 36rpx;
+	  height: 36rpx;
+	}
+  }
+
+  .jinebox {
+	width: 690rpx;
+	height: 150rpx;
+	position: absolute;
+	box-sizing: border-box;
+	left: 30rpx;
+	bottom: 0rpx;
+	background-color: #fff;
+	border-radius: 16rpx;
+	overflow: hidden;
+	display: flex;
+	justify-content: right;
+
+	.jinebox-info {
+	  width: 100%;
+	  text-align: center;
+	  font-size: 36rpx;
+	  color: #000;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+
+	  image {
+		width: 50rpx;
+		height: 50rpx;
+		margin-right: 20rpx;
+	  }
+
+	  .text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	  }
+
+	  view {
+		font-weight: bold;
+	  }
+
+	  text {
+		margin-top: 6rpx;
+	  }
+	}
+  }
+}
+
+.fulibox {
+  height: 150rpx;
+  width: 690rpx;
+  box-sizing: border-box;
+  margin: 30rpx auto;
+  border-radius: 16rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+
+  &-left,
+  &-right {
+	width: 334rpx;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.fulibox-info {
+	  flex-shrink: 0;
+	  width: 160rpx;
+	  text-align: left;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+
+	  view {
+		font-size: 30rpx;
+		font-weight: bold;
+	  }
+
+	  text {
+		font-size: 20rpx;
+		color: rgb(160, 74, 255);
+		margin-top: 12rpx;
+	  }
+	}
+
+	image {
+	  height: 76rpx;
+	  flex-shrink: 0;
+	}
+  }
+
+  &-middle {
+	width: 2rpx;
+	height: 80rpx;
+	background-color: #ddd;
+  }
+}
+
+.myOrder {
+  height: 200rpx;
+  width: 690rpx;
+  box-sizing: border-box;
+  margin: 30rpx auto;
+  border-radius: 16rpx;
+  background-color: #fff;
+  padding: 20rpx 20rpx 30rpx;
+
+  .title {
+	font-size: 30rpx;
+	font-weight: bold;
+
+	.allorder {
+	  font-size: 26rpx;
+	  color: #999;
+
+	  .u-icon {
+		margin-left: 16rpx;
+	  }
+	}
+  }
+
+  .orderList {
+	margin-top: 20rpx;
+	padding: 0 20rpx;
+	box-sizing: border-box;
+  }
+
+  .orderList .list {
+	text-align: center;
+	position: relative;
+	font-size: 20rpx;
+  }
+
+  .orderList image,
+  .myapp .list image {
+	width: 55rpx;
+	height: 55rpx;
+  }
+}
+
+.invite {
+  height: 270rpx;
+  width: 690rpx;
+  box-sizing: border-box;
+  margin: 0rpx auto;
+  border-radius: 16rpx;
+  background-color: #fff;
+  padding: 20rpx 30rpx 30rpx;
+
+  .invite-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&-left {
+	  font-size: 30rpx;
+	  font-weight: bold;
+	}
+
+	&-right {
+	  font-size: 22rpx;
+	  height: 50rpx;
+	  width: 150rpx;
+	  line-height: 50rpx;
+	  text-align: center;
+	  background-color: rgba(160, 74, 255, 0.6);
+	  border-radius: 25rpx;
+	  color: #fff;
+
+	  .u-icon {
+		margin-left: 6rpx;
+	  }
+	}
+  }
+
+  .invite-content {
+	display: flex;
+	align-items: center;
+	margin-top: 20rpx;
+
+	image {
+	  height: 140rpx;
+	  width: 240rpx;
+	  flex-shrink: 0;
+	}
+
+	&-info {
+	  display: flex;
+	  justify-content: space-between;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	.info-item {
+	  width: 100%;
+
+	  view {
+		font-size: 34rpx;
+		font-weight: bold;
+	  }
+
+	  text {
+		font-size: 22rpx;
+		margin-top: 16rpx;
+		color: #999;
+	  }
+	}
+  }
+}
+
+.myapp {
+  // height: 270rpx;
+  width: 690rpx;
+  box-sizing: border-box;
+  margin: 30rpx auto;
+  border-radius: 16rpx;
+  background-color: #fff;
+  padding: 20rpx 30rpx 30rpx;
+
+  .tit {
+	font-size: 30rpx;
+	font-weight: bold;
+  }
+
+  .list {
+	margin-top: 30rpx;
+	text-align: center;
+	width: 25%;
+	font-size: 28rpx;
+	line-height: 1.5;
+	padding: 0;
+	padding: 10rpx;
+
+	view {
+	  font-size: 24rpx;
+	  margin-top: 10rpx;
+	  color: #888;
+	}
+  }
+
+  .list image {
+	width: 45rpx;
+	height: 45rpx;
+  }
+}
+
+.cdkbox {
+  width: 500rpx;
+  background-color: #fff;
+  padding: 30rpx;
+  box-sizing: border-box;
+
+  .tit {
+	text-align: center;
+	margin-bottom: 35rpx;
+  }
+
+  .inp {
+	border-radius: 16rpx;
+	border: 1rpx solid #333;
+	height: 60rpx;
+  }
+
+  button {
+	border-radius: 8rpx;
+	color: #fff;
+	background-color: #00e1db;
+	height: 70rpx;
+	line-height: 70rpx;
+	margin-top: 25rpx;
+	font-size: 28rpx;
+  }
+}
+
+.kefu {
+  background: none;
+}
+
+button::after {
+  border: none;
+}
+.news-btn {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: -30rpx;
+  width: 190rpx;
+}
+.news-btn image {
+  margin-left: 30rpx;
+}
+.showBindTel-view {
+  width: 600rpx;
+  height: auto;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  padding: 40rpx 50rpx;
+  box-sizing: border-box;
+  
+  .showBindTel {
+	font-size: 32rpx;
+	font-weight: 500;
+	color: #333333;
+	text-align: center;
+  }
+  
+  .u-field {
+	background: #F5F5F5;
+	border-radius: 20rpx;
+  }
+  
+  .row {
+	margin-top: 30rpx;
+  }
+  
+  .row-btn {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 30rpx;
+	
+	view {
+	  width: 170rpx;
+	  height: 70rpx;
+	  background: #FFFFFF;
+	  border-radius: 35rpx;
+	  border: 1rpx solid #979797;
+	  text-align: center;
+	  line-height: 70rpx;
+	}
+	
+	&-right {
+	  color: #FFFFFF;
+	  background: #7942E8 !important;
+	}
+  }
+}
+
+.row-code {
+  width: 100%;
+}
+
+.huiyuan {
+  width: 690rpx;
+  border-radius: 8px;
+  background: #333742;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 15px;
+
+  .top {
+	display: flex;
+	justify-content: space-between;
+	
+	.l {
+	  .title {
+		font-size: 20px;
+		color: #FFF;
+	  }
+	  text {
+		font-size: 12px;
+		color: #fff;
+		span {
+		  color: #63b8be;
+		}
+	  }
+	}
+	.r {
+	  font-size: 14px;
+	  color: #fff;
+	  padding-top: 4px;
+	}
+  }
+  .bottom {
+	margin-top: 10px;
+	.progress {
+	  p {
+		margin-top: 15px;
+		span {
+		  color: #63b8be;
+		}
+		text-align: right;
+		color: #fff;
+	  }
+	}
+  }
+}
+
+.deep .uni-progress-inner-bar {
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.deep .uni-progress-bar {
+  border-radius: 10px;
+}
